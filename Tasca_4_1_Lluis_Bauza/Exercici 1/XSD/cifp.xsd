@@ -110,10 +110,3 @@
     <xs:element name="data_final" type="xs:string"/>
 
 </xs:schema>
-
-
-<!--
-para hacer nom_assignatura: https://www.w3schools.com/xml/el_simplecontent.asp
-simpleContent y "extension", en este caso que tenemos un complexType porque tiene atributos
-pero su contenido es simple. 
--->
