@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cifp
+xmlns="https://paucasesnovescifp.cat" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="https://paucasesnovescifp.cat cifp.xsd">
+    <alumne id="001">
+        <nom>Lluís</nom>
+        <llinatges>Bauzá Togores</llinatges>
+        <data_naixement>17 de gener del 1997</data_naixement>
+        <correu>luismiguelbauza@paucasesnovescifp.cat</correu>
+        <telefon>666666666</telefon>
+        <adress>Avinguda Alcudia, 1</adress>
+        <data_matricula>01 d'Octubre de 2025</data_matricula>
+        <curs>DAW</curs>
+    </alumne>
+    <professor id="989">
+        <nom>Walter Manuel</nom>
+        <llinatges>Aguilar Pastor</llinatges>
+        <correu>apw@paucasesnovescifp.cat</correu>
+        <telefon>666666666</telefon>
+        <data_incorporacio>01 de Setembre de 2023</data_incorporacio>
+        <departament>Informàtica</departament>
+        <assignatura id_assignatura="0373">
+            <nom_assignatura cicle="DAW">Llenguatge de marques i sistemes de gestió de la informació</nom_assignatura>
+            <data_inici>1 d'Octubre de 2025</data_inici>
+        </assignatura>
+                <assignatura id_assignatura="0484">
+            <nom_assignatura cicle="DAW">Bases de Dades</nom_assignatura>
+            <data_inici>1 d'Octubre de 2025</data_inici>
+        </assignatura>
+    </professor>
+</cifp>

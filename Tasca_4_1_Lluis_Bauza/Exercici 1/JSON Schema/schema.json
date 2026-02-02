@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Esquema de cifp",
+  "type": "object",
+  "properties": {
+    "cifp": {
+      "type": "object",
+      "properties":{
+        "alumne": {
+          "type": "object",
+          "items": {
+            "type": "array",
+            "required": ["id", "nom", "llinatges", "data_matricula", "curs"],
+            "properties": {
+              "id": { "type": "integer" },
+              "nom": { "type": "string" },
+              "llinatges": { "type": "string" },
+              "data_naixement": { "type": "string", "format": "date" },
+              "correu": { "type": "string", "format": "email" },
+              "telefon": { "type": "string" },
+              "adreça": { "type": "string" },
+              "data_matricula": { "type": "string" },
+              "curs": { "type": "string", "enum": ["DAM", "DAW", "ASIX", "SMX", "SEIA", "ER", "AUT"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "professor": {
+            "type": "object",
+            "items": {
+              "type": "array",
+              "required": ["id", "nom", "llinatges", "data_incorporació", "departament"],
+              "properties": {
+                "id": { "type": "integer" },
+                "nom": { "type": "string" },
+                "llinatges": { "type": "string" },
+                "data_naixement": { "type": "string", "format": "date" },
+                "correu": { "type": "string", "format": "email" },
+                "telefon": { "type": "string" },
+                "adreça": { "type": "string" },
+                "data_incorporació": { "type": "string" },
+                "departament": { "type": "string", "enum": ["Informàtica", "Electricitat", "Automoció"] },
+                "assignatura": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["id_assignatura", "nom_assignatura", "cicle"],
+                    "properties": {
+                      "id_assignatura": { "type": "integer" },
+                      "nom_assignatura": { "type": "string" },
+                      "cicle": { "type": "string", "enum": ["DAM", "DAW", "ASIX", "SMX", "SEIA", "ER", "AUT"] },
+                      "data_inici": { "type": "string", "format": "date" },
+                      "data_final": { "type": ["string", "null"], "format": "date" }
+                    },
+                    "additionalProperties": false
+                  }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  },
+"additionalProperties": false
+}
