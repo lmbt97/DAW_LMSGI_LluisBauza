@@ -1,0 +1,42 @@
+{
+	"cifp": {
+		"alumne": {
+            "id": "001",
+			"nom": "Lluís",
+			"llinatges": "Bauzá Togores",
+			"data_naixement": "17 de gener del 1997",
+			"correu": "luismiguelbauza@paucasesnovescifp.cat",
+			"telefon": "666666666",
+			"adress": "Avinguda Alcudia, 1",
+			"data_matricula": "01 d'Octubre de 2025",
+			"curs": "DAW"
+		},
+		"professor": {
+			"id": "989",
+			"nom": "Walter Manuel",
+			"llinatges": "Aguilar Pastor",
+			"correu": "apw@paucasesnovescifp.cat",
+			"telefon": "666666666",
+			"data_incorporacio": "01 de Setembre de 2023",
+			"departament": "Informàtica",
+			"assignatura": [
+				{
+					"nom_assignatura": {
+						"cicle": "DAW",
+						"text": "Llenguatge de marques i sistemes de gestió de la informació"
+					},
+					"data_inici": "1 d'Octubre de 2025",
+					"_id_assignatura": "0373"
+				},
+				{
+					"nom_assignatura": {
+						"cicle": "DAW",
+						"text": "Bases de Dades"
+					},
+					"data_inici": "1 d'Octubre de 2025",
+					"id_assignatura": "0484"
+				}
+			]
+		}
+	}
+}
